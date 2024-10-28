@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/MyCondition/pom.xml" />
+        <option value="$PROJECT_DIR$/MyEnableOther/pom.xml" />
+        <option value="$PROJECT_DIR$/MyEnable/pom.xml" />
       </list>
     </option>
   </component>
