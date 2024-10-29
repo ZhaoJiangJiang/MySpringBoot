@@ -8,11 +8,11 @@
         <version>3.3.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.myenable</groupId>
-    <artifactId>MyEnable</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>redis-spring-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>MyEnable</name>
-    <description>MyEnable</description>
+    <name>redis-spring-boot-starter</name>
+    <description>redis-spring-boot-starter</description>
     <url/>
     <licenses>
         <license/>
@@ -32,36 +32,15 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.myenable.other</groupId>
-            <artifactId>MyEnableOther</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <!-- 自定义的redis的starter -->
+        <!-- 引入自定义的 configure -->
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>redis-spring-boot-starter</artifactId>
+            <artifactId>redis-spring-boot-autoconfigure</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

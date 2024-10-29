@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/MyCondition/pom.xml" />
         <option value="$PROJECT_DIR$/MyEnableOther/pom.xml" />
         <option value="$PROJECT_DIR$/MyEnable/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-spring-boot-starter/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: redis-spring-boot-autoconfigure
+
+my-redis:
+  host: "127.0.0.1"
+  port: 6379
+
+

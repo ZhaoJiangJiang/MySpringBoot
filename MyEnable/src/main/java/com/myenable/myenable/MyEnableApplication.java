@@ -9,8 +9,10 @@ import com.myenable.other.myenableother.entity.Shop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
+import redis.clients.jedis.Jedis;
 
 /**
  * @ComponentScan：扫描范围：当前引导类所在包及其子包
@@ -32,9 +34,17 @@ import org.springframework.context.annotation.Import;
 //@Import(ProductConfig.class)
 //@EnableProduct
 
-//@Import(MyImportSelector.class)
-@Import(MyImportBeanDefinitionRegistrar.class)
+@Import(MyImportSelector.class)
+//@Import(MyImportBeanDefinitionRegistrar.class)
 public class MyEnableApplication {
+
+
+//    // 验证 @ConditionalOnMissingBean(name = "jedis") 是生效的
+//    @Bean
+//    public Jedis jedis() {
+//        return new Jedis("localhost", 6379);
+//    }
+
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(MyEnableApplication.class, args);
@@ -45,6 +55,9 @@ public class MyEnableApplication {
 
         Shop shop = context.getBean(Shop.class);
         System.out.println(shop);
+
+        Jedis jedis = context.getBean(Jedis.class);
+        System.out.println(jedis);
     }
 
 }
