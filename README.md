@@ -37,3 +37,15 @@
 ```java
 // @EnableAutoConfiguration注解内部使用@Import(AutoConfigurationImportSelect.class)来加载配置类
 ```
+
+#### 3. 自定义实现Starter
+
+```java
+/* 自定义redis-start。要求当导入redis坐标时，SpringBoot自动创建Jedis的Bean */
+
+// 实现步骤
+// 1. 创建redis-spring-boot-autoconfigure 模块
+// 2. 创建redis-spring-boot-starter模块，依赖 redis-spring-boot-autoconfigure 模块
+// 3. 在redis-spring-boot-autoconfigure模块中初始化Jedis的Bean。并定义META-INF/spring.factories文件
+// 4. 在测试模块中引入自定义的redis-starter依赖，测试获取Jedis的Bean，操作redis
+```
