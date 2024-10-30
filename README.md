@@ -49,3 +49,11 @@
 // 3. 在redis-spring-boot-autoconfigure模块中初始化Jedis的Bean。并定义META-INF/spring.factories文件
 // 4. 在测试模块中引入自定义的redis-starter依赖，测试获取Jedis的Bean，操作redis
 ```
+
+#### 4. SpringBoot监听机制
+```java
+// 1. ApplicationContextInitializer
+// 2. SpringApplicationRunListener
+// 3. CommandLineRunner
+// 4. ApplicationRunner
+```
