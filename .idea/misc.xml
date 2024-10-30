@@ -9,7 +9,14 @@
         <option value="$PROJECT_DIR$/MyEnable/pom.xml" />
         <option value="$PROJECT_DIR$/redis-spring-boot-autoconfigure/pom.xml" />
         <option value="$PROJECT_DIR$/redis-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-listener/pom.xml" />
+        <option value="$PROJECT_DIR$/MyListener/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springboot-listener/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="20" project-jdk-type="JavaSDK">
