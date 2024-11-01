@@ -11,10 +11,15 @@
         <option value="$PROJECT_DIR$/redis-spring-boot-starter/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-listener/pom.xml" />
         <option value="$PROJECT_DIR$/MyListener/pom.xml" />
+        <option value="$PROJECT_DIR$/MyActuator/pom.xml" />
+        <option value="$PROJECT_DIR$/MyActuator/MyAdminServer/pom.xml" />
+        <option value="$PROJECT_DIR$/MyAdminServer/pom.xml" />
+        <option value="$PROJECT_DIR$/MyAdminClient/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/MyActuator/MyAdminServer/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-listener/pom.xml" />
       </set>
     </option>

@@ -7,11 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="MyActuator" />
+        <module name="MyAdminServer" />
+        <module name="MyCondition" />
+        <module name="MyListener" />
         <module name="MyEnable" />
         <module name="redis-spring-boot-starter" />
-        <module name="MyCondition" />
+        <module name="MyAdminClient" />
         <module name="redis-spring-boot-autoconfigure" />
-        <module name="MyListener" />
         <module name="MyEnableOther" />
       </profile>
     </annotationProcessing>
@@ -21,6 +24,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MyActuator" options="-parameters" />
+      <module name="MyAdminClient" options="-parameters" />
+      <module name="MyAdminServer" options="-parameters" />
       <module name="MyCondition" options="-parameters" />
       <module name="MyEnable" options="-parameters" />
       <module name="MyEnableOther" options="-parameters" />
